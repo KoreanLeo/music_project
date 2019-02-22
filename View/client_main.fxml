@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ClientController">
+   <children>
+      <MenuBar layoutX="7.0" layoutY="7.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="메뉴">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handlerMenuRecommend" text="노래추천">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="R" control="DOWN" meta="ANY" shift="ANY" shortcut="ANY" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#handlerMenuChat" text="채팅방">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="C" control="DOWN" meta="ANY" shift="DOWN" shortcut="ANY" />
+                     </accelerator>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#handlerMenuExit" text="종료" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="43.0" layoutY="70.0" text="순위TOP 10" />
+      <Label layoutX="43.0" layoutY="51.0" text="노래추천" />
+      <Button fx:id="ctExit" layoutX="691.0" layoutY="559.0" mnemonicParsing="false" prefHeight="98.0" prefWidth="271.0" text="프로그램 종료" />
+      <Button fx:id="ctRecommend" layoutX="43.0" layoutY="559.0" mnemonicParsing="false" prefHeight="98.0" prefWidth="271.0" text="노래추천" />
+      <Button fx:id="ctChat" layoutX="365.0" layoutY="559.0" mnemonicParsing="false" prefHeight="98.0" prefWidth="271.0" text="채팅방" />
+      <TableView fx:id="ctTableView" layoutX="43.0" layoutY="96.0" prefHeight="430.0" prefWidth="520.0">
+         <columns>
+            <TableColumn prefWidth="135.0" text="가수" />
+            <TableColumn prefWidth="214.0" text="노래제목" />
+            <TableColumn prefWidth="84.0" text="장르" />
+            <TableColumn prefWidth="76.0" text="추천수" />
+         </columns>
+      </TableView>
+      <Button fx:id="ctBtnNew" layoutX="483.0" layoutY="56.0" mnemonicParsing="false" text="새로고침" />
+      <Label layoutX="619.0" layoutY="96.0" text="접속자" textFill="#ee00ff">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="ctListView" layoutX="619.0" layoutY="143.0" prefHeight="337.0" prefWidth="280.0" />
+   </children>
+</AnchorPane>

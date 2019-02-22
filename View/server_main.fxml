@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ServerController">
+   <children>
+      <TabPane layoutX="10.0" layoutY="10.0" prefHeight="680.0" prefWidth="980.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="추 천 관 리">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="33.0" layoutY="21.0" text="노래추천" />
+                        <Label layoutX="33.0" layoutY="40.0" text="순위TOP 10" />
+                        <TableView fx:id="svTableView" layoutX="33.0" layoutY="71.0" prefHeight="430.0" prefWidth="520.0">
+                          <columns>
+                            <TableColumn prefWidth="131.0" text="가수" />
+                              <TableColumn prefWidth="216.0" text="노래제목" />
+                              <TableColumn prefWidth="83.0" text="장르" />
+                              <TableColumn prefWidth="75.0" text="추천수" />
+                          </columns>
+                        </TableView>
+                        <ListView fx:id="svListView" layoutX="626.0" layoutY="118.0" prefHeight="337.0" prefWidth="288.0" />
+                        <Button fx:id="svChat" layoutX="355.0" layoutY="529.0" mnemonicParsing="false" prefHeight="98.0" prefWidth="271.0" text="채팅방" />
+                        <Button fx:id="svMusicList" layoutX="33.0" layoutY="529.0" mnemonicParsing="false" prefHeight="98.0" prefWidth="271.0" text="추천목록" />
+                        <Button fx:id="svExit" layoutX="681.0" layoutY="529.0" mnemonicParsing="false" prefHeight="98.0" prefWidth="271.0" text="프로그램 종료" />
+                        <Button fx:id="svBtnNew" layoutX="473.0" layoutY="26.0" mnemonicParsing="false" text="새로고침" />
+                        <Label layoutX="626.0" layoutY="71.0" text="접속자" textFill="#ee00ff">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="회 원 관 리">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="memberInfo" layoutY="43.0" prefHeight="551.0" prefWidth="980.0">
+                          <columns>
+                            <TableColumn prefWidth="170.0" text="아이디" />
+                            <TableColumn prefWidth="131.0" text="이름" />
+                              <TableColumn prefWidth="64.0" text="나이" />
+                              <TableColumn prefWidth="100.0" text="닉네임" />
+                              <TableColumn prefWidth="61.0" text="성별" />
+                              <TableColumn prefWidth="107.0" text="장르" />
+                              <TableColumn minWidth="0.0" prefWidth="73.0" text="제재대상" />
+                              <TableColumn prefWidth="268.0" text="제재 사유" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="txtSearch" layoutX="4.0" layoutY="13.0" prefWidth="120.0" promptText="이름" />
+                        <Button fx:id="btnSearch" layoutX="124.0" layoutY="13.0" mnemonicParsing="false" text="검색" />
+                        <Button fx:id="blackRegister" layoutX="666.0" layoutY="606.0" mnemonicParsing="false" text="제재 등록" />
+                        <Button fx:id="blackClear" layoutX="761.0" layoutY="606.0" mnemonicParsing="false" text="제재 해제" />
+                        <Button fx:id="infoEdit" layoutX="856.0" layoutY="606.0" mnemonicParsing="false" text="수정" />
+                        <Button fx:id="infoDelete" layoutX="916.0" layoutY="606.0" mnemonicParsing="false" text="삭제" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

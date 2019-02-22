@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button id="mbBtnOk" layoutX="81.0" layoutY="449.0" mnemonicParsing="false" text="확인" />
+      <Button id="mbBtnCancel" layoutX="149.0" layoutY="449.0" mnemonicParsing="false" text="취소" />
+      <Label layoutX="36.0" layoutY="70.0" text="이 름 :" />
+      <Label layoutX="36.0" layoutY="119.0" text="성 별 :" />
+      <Label layoutX="16.0" layoutY="170.0" text="아 이 디 :" />
+      <Label layoutX="10.0" layoutY="229.0" text="비밀번호 :" />
+      <Label layoutX="13.0" layoutY="288.0" text="닉 네 임 :" />
+      <TextField id="mbName" layoutX="89.0" layoutY="65.0" prefWidth="100.0" />
+      <TextField id="mbId" layoutX="89.0" layoutY="165.0" prefWidth="100.0" />
+      <TextField id="mbNick" layoutX="89.0" layoutY="283.0" prefWidth="100.0" />
+      <PasswordField id="mbPass" layoutX="89.0" layoutY="224.0" prefWidth="100.0" />
+       <fx:define><ToggleGroup fx:id="group"/></fx:define>
+      <RadioButton id="tgMan" ToggleGroup="$group" layoutX="87.0" layoutY="119.0" mnemonicParsing="false" text="남자" userData="남자" />
+      <RadioButton id="tgWoman" ToggleGroup="$group" layoutX="153.0" layoutY="119.0" mnemonicParsing="false" text="여자" userData="여자" />
+      <Button id="mbOverlab" layoutX="191.0" layoutY="165.0" mnemonicParsing="false" text="중복확인" />
+      <Label layoutX="80.0" layoutY="14.0" text="회 원 정 보" textFill="#e8139d">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="344.0" text="장 르 :" />
+      <Label layoutX="33.0" layoutY="396.0" text="나 이 :" />
+      <TextField id="mbAge" layoutX="90.0" layoutY="391.0" prefWidth="100.0" />
+      <ComboBox id="mbGenre" layoutX="90.0" layoutY="339.0" prefWidth="100.0" promptText="목록" />
+   </children>
+</AnchorPane>

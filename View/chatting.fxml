@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="110.0" layoutY="24.0" text="자유롭게 채팅 하세요." textFill="#ff21f6">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button id="ctBtnSend" layoutX="310.0" layoutY="520.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="90.0" text="보내기" />
+      <TextArea id="ctTxtArea" layoutY="172.0" prefHeight="350.0" prefWidth="400.0" />
+      <TextField id="ctTxtField" layoutY="522.0" prefHeight="80.0" prefWidth="310.0" />
+      <Label layoutX="24.0" layoutY="85.0" text="※ 욕설 및 비하 발언 등은 제재 조치 됩니다." textFill="#ff21f6">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

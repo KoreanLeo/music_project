@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" styleClass="login" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RootController">
+   <children>
+      <ImageView fx:id="loginImg" fitHeight="213.0" fitWidth="236.0" layoutX="82.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/boat.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="41.0" layoutY="338.0" text="아 이 디" />
+      <Label layoutX="38.0" layoutY="378.0" text="비밀번호" />
+      <TextField fx:id="textId" layoutX="105.0" layoutY="333.0" />
+      <PasswordField fx:id="textPassword" layoutX="105.0" layoutY="373.0" />
+      <Button fx:id="btnLogin" layoutX="282.0" layoutY="333.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="80.0" text="로그인" />
+      <Button fx:id="btnClose" layoutX="222.0" layoutY="431.0" mnemonicParsing="false" text="나가기" />
+      <Separator layoutX="25.0" layoutY="306.0" prefWidth="350.0" />
+      <Button fx:id="btnJoin" layoutX="114.0" layoutY="431.0" mnemonicParsing="false" text="회원가입" />
+   </children>
+</AnchorPane>

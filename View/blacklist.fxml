@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button id="blackBtnOk" layoutX="90.0" layoutY="257.0" mnemonicParsing="false" text="확인" />
+      <Button id="blackBtnExit" layoutX="160.0" layoutY="257.0" mnemonicParsing="false" text="취소" />
+      <Label layoutX="37.0" layoutY="33.0" text="아 이 디 :" />
+      <Label layoutX="26.0" layoutY="88.0" text="제재 사유 :" />
+      <TextArea id="blackCause" layoutX="48.0" layoutY="120.0" prefHeight="100.0" prefWidth="204.0" />
+      <TextField id="blackId" layoutX="107.0" layoutY="28.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView id="listTableView" layoutY="38.0" prefHeight="312.0" prefWidth="400.0">
+        <columns>
+          <TableColumn prefWidth="90.0" text="가수" />
+          <TableColumn prefWidth="120.0" text="노래제목" />
+            <TableColumn text="장르" />
+            <TableColumn prefWidth="105.0" text="추천인" />
+        </columns>
+      </TableView>
+      <TextField id="listTxtSearch" layoutX="251.0" layoutY="8.0" prefWidth="100.0" promptText="입력하세요" />
+      <Button id="listBtnSearch" layoutX="351.0" layoutY="8.0" mnemonicParsing="false" text="검색" />
+      <Button id="listBtnClear" layoutX="201.0" layoutY="357.0" mnemonicParsing="false" text="초기화" />
+      <Button id="listBtnDelete" layoutX="276.0" layoutY="357.0" mnemonicParsing="false" text="삭제" />
+      <Button id="listBtnExit" layoutX="336.0" layoutY="357.0" mnemonicParsing="false" text="닫기" />
+      <ComboBox id="cmbList" layoutX="151.0" layoutY="8.0" prefHeight="29.0" prefWidth="100.0" promptText="목록" />
+   </children>
+</AnchorPane>
